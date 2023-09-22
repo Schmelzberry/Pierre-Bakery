@@ -4,8 +4,8 @@ namespace Pierre.Models
 {
   public class Pastry 
   {
-    private int _numberPastries;
-    public int NumberPastries
+    private _numberPastries;
+    public NumberPastries
     {
       get { return _numberPastries; }
     }
@@ -18,6 +18,16 @@ namespace Pierre.Models
     public int GetPricePastry()
     {
       return _numberPastries * 2;
+    }
+
+     public int GetPricePastry()
+    {
+      return _numberPastries * 2;
+    }
+
+     public int GetDiscountPastry()
+    {
+      int[] _numberPastries * 2;
     }
   }
 }

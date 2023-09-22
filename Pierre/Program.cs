@@ -5,11 +5,15 @@ class Program
   {
   static void Main()
     {
+    Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
+    Console.WriteLine("*~*~PIERRE'S BAKERY*~*~");
+    Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
+    Console.WriteLine("Welcome! We hope you're hungry.");
     Console.WriteLine("How many pastries would you like?");
     string pastryRequest = Console.ReadLine();
     Pastry newPastries = new Pastry(int.Parse(pastryRequest));
-    Console.WriteLine("You lucky dawg.There's a special on pastries *~*~*~*~BUY 3,GET 1 FREE~*~*~*~*");
-    Console.WriteLine("So your final price for " + newPastries.NumberPastries + " pastries will be " + newPastries.GetPricePastry() + "!");
+    Console.WriteLine(newPastries.NumberPastries + "? Sounds good.");
+    Console.WriteLine("Your final price for " + newPastries.NumberPastries + " pastries will be " + newPastries.GetPricePastry() + "!");
 
 
     }

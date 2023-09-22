@@ -36,5 +36,21 @@ namespace Pierre.Tests
       Assert.AreEqual(result, testPastry.GetPricePastry());
     }
 
+     [TestMethod]
+    public void GetDiscountPastry_ExcludeEveryFourthPastryFromCount_Int()
+    { 
+    // NEED TO REFACTOR USER INPUT TO BE AN ARRAY THAT COUNTS TO THE USERS
+    // SPECIFIED NUMBER, THEN CAN SORT EVERY 4TH NUMBER AND RETURN NEW COUNT
+    // THEN MULTIPLY NEW COUNT BY PASTRY PRICE
+    // THIS STRUCTURE SHOULD WORK FOR BREAD TOO
+      //arrange
+      Pastry testPastry = new Pastry(4);
+      //act
+      testPastry.GetDiscountPastry();
+      int result = testPastry.DiscountNumberPastries * 2;
+      //assert
+      Assert.AreEqual(result, testPastry.GetPricePastry());
+    }
+
   }
 }
