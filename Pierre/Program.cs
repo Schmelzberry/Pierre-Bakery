@@ -1,8 +1,7 @@
 using System;
 using Pierre.Models;
-
 class Program
-  {
+ {
   static void Main()
     {
     Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
@@ -12,10 +11,9 @@ class Program
     Console.WriteLine("How many pastries would you like?");
     string pastryRequest = Console.ReadLine();
     Pastry newPastries = new Pastry(int.Parse(pastryRequest));
-    Console.WriteLine(newPastries.NumberPastries + "? Sounds good.");
+ Console.WriteLine(newPastries.NumberPastries + "? Sounds good.");
     Console.WriteLine("Your final price for " + newPastries.NumberPastries + " pastries will be " + newPastries.GetPricePastry() + "!");
 
 
     }
-
-  }
+ }
