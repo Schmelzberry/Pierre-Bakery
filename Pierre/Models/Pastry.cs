@@ -2,11 +2,12 @@ namespace Pierre.Models
 {
   public class Pastry 
   {
-    private int _ 
-    public int CustomerOrder
+    private int _numberPastries 
+    public int NumberPastries
     {
-      
+      get { return _numberPastries; }
     }
-    public Pastry (CustomerOrder)
+
+    public Pastry (int )
   }
 }
