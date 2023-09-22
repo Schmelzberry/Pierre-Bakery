@@ -37,7 +37,7 @@ namespace Pierre.Tests
     }
 
      [TestMethod]
-    public void GetDiscountPastry_ExcludeEveryFourthPastryFromCount_Int()
+    public void GetDiscountPastry_CreateLoopThatCountsToUserInput_Array()
     { 
     // NEED TO REFACTOR USER INPUT TO BE AN ARRAY THAT COUNTS TO THE USERS
     // SPECIFIED NUMBER, THEN CAN SORT EVERY 4TH NUMBER AND RETURN NEW COUNT
