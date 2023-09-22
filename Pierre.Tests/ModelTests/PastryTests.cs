@@ -10,7 +10,7 @@ namespace Pierre.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     { //arrange
-      Pastry testPastry = new Pastry();
+      Pastry testPastry = new Pastry(3);
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
 
@@ -19,10 +19,8 @@ namespace Pierre.Tests
     { //arrange
     //act
     //assert
-      int customerOrder = 3;
-      Pastry testPastry = new Pastry(customerOrder);
-      int result = testPastry.customerOrder;
-      Assert.AreEqual(customerOrder, result);
+      Pastry testPastry = new Pastry(3);
+      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
 
   }

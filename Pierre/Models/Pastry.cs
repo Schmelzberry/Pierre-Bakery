@@ -10,7 +10,7 @@ namespace Pierre.Models
       get { return _numberPastries; }
     }
 
-    public Pastry (int customerOrder)
+    public Pastry(int customerOrder)
     {
       _numberPastries = customerOrder;
     }
