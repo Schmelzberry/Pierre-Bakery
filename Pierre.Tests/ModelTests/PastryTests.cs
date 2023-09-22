@@ -24,16 +24,16 @@ namespace Pierre.Tests
     }
 
      [TestMethod]
-    public void GetPrice_MultiplyPastryNumberByPrice_Int()
+    public void GetPricePastry_MultiplyPastryNumberByPrice_Int()
     { 
     
       //arrange
       Pastry testPastry = new Pastry(3);
       //act
-      testPastry.GetPrice();
+      testPastry.GetPricePastry();
       int result = testPastry.NumberPastries * 2;
       //assert
-      Assert.AreEqual(result, testPastry.GetPrice());
+      Assert.AreEqual(result, testPastry.GetPricePastry());
     }
 
   }

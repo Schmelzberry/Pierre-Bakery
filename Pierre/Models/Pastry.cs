@@ -14,5 +14,10 @@ namespace Pierre.Models
     {
       _numberPastries = customerOrder;
     }
+
+    public int GetPricePastry()
+    {
+      return _numberPastries * 2;
+    }
   }
 }
