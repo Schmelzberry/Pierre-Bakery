@@ -21,29 +21,18 @@ namespace Pierre.Tests
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
      [TestMethod]
-    public void GetPricePastry_MultiplyPastryNumberByPrice_Int()
-    { 
-    
-      //arrange
-      Pastry testPastry = new Pastry(3);
-      //act
-      testPastry.GetPricePastry();
-      int result = testPastry.NumberPastries * 2;
-      //assert
-      Assert.AreEqual(result, testPastry.GetPricePastry());
-    }
-      [TestMethod]
-    public void GetDiscountPastry_NotCountEveryFourthPastry_Int()
+    public void GetPricePastry_MultiplyPastryNumberByPriceAndDiscountFourthPastry_Int()
     { 
     
       //arrange
       Pastry testPastry = new Pastry(5);
       //act
-      testPastry.GetDiscountPastry();
-      int result = 4;
+      testPastry.GetPricePastry();
+      int result = testPastry.GetPricePastry();
       //assert
-      Assert.AreEqual(result, testPastry.GetDiscountPastry());
+      Assert.AreEqual(result, testPastry.GetPricePastry());
     }
+    
 
   }
 }

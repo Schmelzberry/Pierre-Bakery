@@ -13,14 +13,21 @@ namespace Pierre.Models
       _numberPastries = customerOrder;
     }
 
-    public int GetPricePastry()
+ public int GetPricePastry()
+{
+    int pricePerPastry = 2; // Price per pastry without discount
+    int discountedPrice = 0;
+    
+    // Calculate the total price with the discount
+    if (_numberPastries > 0)
     {
-      return _numberPastries * 2;
+        int discountedPastries = _numberPastries / 4;
+        int remainingPastries = _numberPastries % 4;
+
+        discountedPrice = (discountedPastries * 3 * pricePerPastry) + (remainingPastries * pricePerPastry);
     }
 
-    public GetGetDiscountPastry()
-    {
-      int
-    }
-  }
+    return discountedPrice;
+}
+}
 }
