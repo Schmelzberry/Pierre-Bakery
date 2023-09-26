@@ -12,6 +12,8 @@ namespace Pierre.Models
   {
     NumberBread = loaves;
   }
-
+  public int GetPriceBread()
+  {
+  }
   }
 }

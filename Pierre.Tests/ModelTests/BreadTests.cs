@@ -22,5 +22,17 @@ namespace Pierre.Tests
       int result = 3;
       Assert.AreEqual(testBread.NumberBread, result);
     }
+    [TestMethod]
+    public void GetPriceBread_MultiplyBreadNumberByPriceAndDiscountThirdLoaf_Int()
+    { 
+    
+      //arrange
+      Pastry testPastry = new Bread(3);
+      //act
+      testPastry.GetPriceBread();
+      int result = 10;
+      //assert
+      Assert.AreEqual(result, testPastry.GetPriceBread());
+    }
   }
 }
