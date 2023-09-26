@@ -2,7 +2,7 @@
 
 #### By _Jake Elsberry_
 
-#### _A C# console application for a bakery, calculating total costs for a user's order._
+#### _A C# console application for a bakery, applying a discount before calculating the cost for a user's order._
 
 ### Technologies Used
 

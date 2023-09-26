@@ -8,17 +8,16 @@ namespace Pierre.Tests
   {
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
-    { //arrange
+    { 
       Pastry testPastry = new Pastry(3);
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
      [TestMethod]
-    public void PastryNumber_CreatesInstanceOfPastryWithNumberRequested_Int()
-    { //arrange
-    //act
-    //assert
+    public void PastryNumber_CreatesInstanceOfPastryWithNumberPastriesRequested_Int()
+    { 
       Pastry testPastry = new Pastry(3);
-      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+      int result = 3;
+      Assert.AreEqual(result, testPastry.NumberPastries);
     }
      [TestMethod]
     public void GetPricePastry_MultiplyPastryNumberByPriceAndDiscountFourthPastry_Int()
@@ -28,7 +27,7 @@ namespace Pierre.Tests
       Pastry testPastry = new Pastry(5);
       //act
       testPastry.GetPricePastry();
-      int result = testPastry.GetPricePastry();
+      int result = 8;
       //assert
       Assert.AreEqual(result, testPastry.GetPricePastry());
     }
