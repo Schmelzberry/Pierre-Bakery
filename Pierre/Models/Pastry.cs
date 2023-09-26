@@ -17,5 +17,10 @@ namespace Pierre.Models
     {
       return _numberPastries * 2;
     }
+
+    public GetGetDiscountPastry()
+    {
+      int
+    }
   }
 }
