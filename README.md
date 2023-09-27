@@ -11,6 +11,7 @@
 * MSTest
 
 ### Description
+Welcome to Pierre's bakery! Use this console app to order bread and pastries from a fictional baker named Pierre. He offers some great deals.
 
 ### Install Requirements
 
