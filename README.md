@@ -17,12 +17,13 @@
 1. Copy the **[URL](https://github.com/Schmelzberry/Pierre-Bakery)**
 2. Open your preferred Terminal.
 3. Next, change your working directory to where you want the cloned directory to live for the course of looking at project.
-4. In your terminal, type `git clone` and use the copied URL from Step 1. Or, copy the following git command:
+4. In your terminal, type `git clone` and insert the copied URL from Step 1. Or, copy the following git command:
 ```bash
 $ git clone https://github.com/Schmelzberry/Pierre-Bakery.git
 ```
-5. Open your terminal and navigate to this project's production directory called `Pierre.Solution`.
-6. In the command line, run the following command to compile and execute the console application:
+5. Open your terminal and navigate to this project's directory called `Pierre.Solution`.
+6. In the command line, navigate to the `Pierre` subdirectory and run the following command to compile and execute the console application ```$ dotnet run```
+7. If you wish to see Model tests, from the command line, navigate to the `Pierre.Tests` subdirectory and run the following command from said subdirectory to run tests ```$ dotnet run```
 
 ## Known Bugs
 

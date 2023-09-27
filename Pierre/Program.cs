@@ -14,8 +14,8 @@ class Program
             Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
             Console.WriteLine("Welcome! We hope you're hungry.");
             Console.WriteLine("Check out our prices below: ");
-            Console.WriteLine("Pastry = $2 (Buy 3, get 4th free!)");
-            Console.WriteLine("Bread = $5 (Buy 2, get 3rd free!)");
+            Console.WriteLine("Pastry = $2 (Buy 3, every 4th is free!)");
+            Console.WriteLine("Bread = $5 (Buy 2, every 3rd is free!)");
             Console.WriteLine("How many pastries would you like?");
             string pastryRequest = Console.ReadLine();
             Pastry newPastries = new Pastry(int.Parse(pastryRequest));
@@ -41,7 +41,7 @@ class Program
                     + "!"
             );
             Console.WriteLine("Thanks for shopping at Pierre's!");
-            Console.WriteLine("Enter 'bakery' to shop again, or we will see you later!");
+            Console.WriteLine("Enter 'bakery' to shop again, or we will see you later.");
             string runItBack = Console.ReadLine();
             if (runItBack != "bakery")
             {
