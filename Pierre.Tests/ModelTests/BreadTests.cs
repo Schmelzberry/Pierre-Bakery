@@ -14,12 +14,13 @@ namespace Pierre.Tests
     testBread.GetType());
     }
     [TestMethod]
-    public void BreadNumber_CreatesInstanceOfPastryWithNumberRequested_Int()
-    { //arrange
-    //act
-    //assert
+    public void BreadNumber_CreatesInstanceOfBreadWithNumberRequested_Int()
+    { 
+      //arrange
       Bread testBread = new Bread(3);
+      //act
       int result = 3;
+      //assert
       Assert.AreEqual(testBread.NumberBread, result);
     }
     [TestMethod]
@@ -27,12 +28,12 @@ namespace Pierre.Tests
     { 
     
       //arrange
-      Pastry testPastry = new Bread(3);
+      Bread testBread = new Bread(3);
       //act
-      testPastry.GetPriceBread();
+      testBread.GetPriceBread();
       int result = 10;
       //assert
-      Assert.AreEqual(result, testPastry.GetPriceBread());
+      Assert.AreEqual(result, testBread.GetPriceBread());
     }
   }
 }
