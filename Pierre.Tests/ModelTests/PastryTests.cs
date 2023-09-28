@@ -25,9 +25,11 @@ namespace Pierre.Tests
     
       //arrange
       Pastry testPastry = new Pastry(5);
+      int pastryPrice = 2;
+      int discountedPastries = 4;
       //act
       testPastry.GetPricePastry();
-      int result = 8;
+      int result = pastryPrice * discountedPastries;
       //assert
       Assert.AreEqual(result, testPastry.GetPricePastry());
     }

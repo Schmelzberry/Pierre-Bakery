@@ -17,7 +17,7 @@ namespace Pierre.Models
     int pricePerLoaf = 5;
     int discountedPriceBread =0;
 
-    if(NumberBread > 0)
+    if  (NumberBread > 0)
     {
       int discountedBread = NumberBread / 3;
       int remainingBread = NumberBread % 3;

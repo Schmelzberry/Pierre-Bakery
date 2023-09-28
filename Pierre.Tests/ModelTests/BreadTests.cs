@@ -29,9 +29,11 @@ namespace Pierre.Tests
     
       //arrange
       Bread testBread = new Bread(3);
+      int breadPrice = 5;
+      int discountedBread = 2;
       //act
       testBread.GetPriceBread();
-      int result = 10;
+      int result = breadPrice * discountedBread;
       //assert
       Assert.AreEqual(result, testBread.GetPriceBread());
     }
