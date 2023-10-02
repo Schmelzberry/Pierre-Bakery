@@ -22,9 +22,9 @@ Welcome to Pierre's bakery! Use this console app to order bread and pastries fro
 ```bash
 $ git clone https://github.com/Schmelzberry/Pierre-Bakery.git
 ```
-5. Open your terminal and navigate to this project's directory called `Pierre.Solution`.
+5. Open your terminal and navigate to this project's directory.
 6. In the command line, navigate to the `Pierre` subdirectory and run the following command to compile and execute the console application ```$ dotnet run```
-7. If you wish to see Model tests, from the command line, navigate to the `Pierre.Tests` subdirectory and run the following command from said subdirectory to run tests ```$ dotnet run```
+7. If you wish to see Model tests, from the command line, navigate to the `Pierre.Tests` subdirectory and run the following command from said subdirectory to run tests ```$ dotnet test```
 
 ## Known Bugs
 

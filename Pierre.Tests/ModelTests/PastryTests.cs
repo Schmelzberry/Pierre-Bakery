@@ -33,6 +33,20 @@ namespace Pierre.Tests
       //assert
       Assert.AreEqual(result, testPastry.GetPricePastry());
     }
+
+     [TestMethod]
+    public void GetPricePastryof0_MultiplyPastryNumberByZero_Int()
+    { 
+    
+      //arrange
+      Pastry testPastry = new Pastry(0);
+      int discountedPastries = 0;
+      //act
+      testPastry.GetPricePastry();
+      int result = 0;
+      //assert
+      Assert.AreEqual(result, testPastry.GetPricePastry());
+    }
     
 
   }

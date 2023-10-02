@@ -37,5 +37,18 @@ namespace Pierre.Tests
       //assert
       Assert.AreEqual(result, testBread.GetPriceBread());
     }
+     [TestMethod]
+    public void GetPriceBreadof0_MultiplyBreadNumberByZero_Int()
+    { 
+    
+      //arrange
+      Bread testBread = new Bread(0);
+      int discountedBread = 0;
+      //act
+      testBread.GetPriceBread();
+      int result = 0;
+      //assert
+      Assert.AreEqual(result, testBread.GetPriceBread());
+    }
   }
 }

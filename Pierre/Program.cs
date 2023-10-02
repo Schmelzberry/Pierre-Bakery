@@ -12,7 +12,7 @@ class Program
             Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
             Console.WriteLine("*~*~PIERRE'S BAKERY*~*~");
             Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
-            Console.WriteLine("Welcome! We hope you're hungry.");
+            Console.WriteLine("Welcome to Pierre's! We hope you're hungry.");
             Console.WriteLine("Check out our prices below: ");
             Console.WriteLine("Pastry = $2 (Buy 3, every 4th is free!)");
             Console.WriteLine("Bread = $5 (Buy 2, every 3rd is free!)");
@@ -25,7 +25,7 @@ class Program
             Bread newBread = new Bread(int.Parse(breadRequest));
             Console.WriteLine(newBread.NumberBread + "? Sounds good.");
             Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
-            Console.WriteLine("*~*~PIERRE'S BAKERY*~*~");
+            Console.WriteLine("*~*~*~*ORDER FORM*~*~*~");
             Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*");
             Console.WriteLine(
                 "Your price for "
